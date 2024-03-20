@@ -157,7 +157,7 @@ body {
   background-color: var(--color-tertiary);
   width: 100vw;
   height: 100vh;
-  z-index: 17;
+  z-index: 30;
 }
 
 .navbar .mobile .header {
@@ -302,7 +302,8 @@ footer .container .footer-col .footer-nav li::before {
   footer .container {
     flex-direction: column;
   }
-  footer .container .footer-col {
+  footer .container .footer-col,
+  footer .container .footer-col-grp {
     width: calc(100% - 20px);
   }
 }
