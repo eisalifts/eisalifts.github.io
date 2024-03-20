@@ -12,13 +12,5 @@ var loadingTimeout = setInterval(() => {
 $(document).ready(function () {
   clearInterval(loadingTimeout);
   $(".preloader").hide();
-
-  $(".products .product img").css(
-    "height",
-    $(".products .product img").width()
-  );
-
-  $(".navbar .container::after").on("click", function () {
-    $(".mobile").show();
-  });
+  onReady();
 });
