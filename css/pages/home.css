@@ -13,10 +13,10 @@
 }
 
 .hero h1 {
-  z-index: 20;
+  z-index: 16;
   position: relative;
   font-size: 4rem;
-  color: #0042e9;
+  color: var(--color-primary);
   display: inline-block;
   margin: 0;
 }
@@ -29,8 +29,8 @@
 .hero .btn {
   margin-top: 20px;
   display: inline-block;
-  background-color: #0e1111;
-  color: #dadada;
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -54,13 +54,13 @@
   .hero .btn {
     font-size: 1rem;
     margin-top: 15px;
-    background-color: rgba(14, 17, 17, 0.846);
-    color: #dadada;
-    text-decoration: underline #dadada;
+    background-color: var(--color-secondary-trans);
+    color: var(--color-tertiary);
+    text-decoration: underline var(--color-tertiary);
     text-underline-position: under;
   }
   .hero .btn::before {
-    text-decoration: underline rgba(14, 17, 17, 0.846);
+    text-decoration: underline var(--color-secondary-trans);
     text-underline-position: under;
     font-weight: bold;
     content: "# ";
@@ -126,7 +126,7 @@
   top: 4rem;
   z-index: 20;
   mix-blend-mode: difference;
-  color: #fff;
+  color: var(--color-tertiary);
 }
 
 .products .product {
@@ -140,9 +140,9 @@
 
   margin: 20px;
   border-radius: 10px;
-  background-color: #dadadaef;
+  background-color: var(--color-tertiary-trans);
   backdrop-filter: blur(15px) saturate(180%);
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 0px 20px 0px var(--color-secondary-trans);
 }
 
 .products .product img {
@@ -174,8 +174,8 @@
 .products .product .main .btn {
   margin-top: 10px;
   display: inline-block;
-  background-color: #0e1111;
-  color: #dadada;
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -207,13 +207,13 @@
   .products .product .main .btn {
     font-size: 1rem;
     margin-top: 15px;
-    background-color: rgba(0, 0, 0, 0.846);
-    color: #dadada;
-    text-decoration: underline #dadada;
+    background-color: var(--color-secondary-trans);
+    color: var(--color-tertiary);
+    text-decoration: underline var(--color-tertiary);
     text-underline-position: under;
   }
   .products .product .main .btn::before {
-    text-decoration: underline rgba(0, 0, 0, 0.846);
+    text-decoration: underline var(--color-secondary-trans);
     text-underline-position: under;
     font-weight: bold;
     content: "# ";

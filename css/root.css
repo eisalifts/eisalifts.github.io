@@ -2,12 +2,20 @@ html {
   margin: 0;
 }
 
+:root {
+  --color-primary: #0042e9;
+  --color-secondary: #0e1111;
+  --color-secondary-trans: #0e1111bd;
+  --color-tertiary: #dadada;
+  --color-tertiary-trans: #dadadabd;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #dadada;
-  color: #0e1111;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
 }
 
 .cursor {
@@ -16,8 +24,8 @@ body {
   height: 40px;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 15;
-  border: 2px solid #dadada00;
+  z-index: 20;
+  border: 2px solid #ffffff00;
   backdrop-filter: invert(1);
   transform: translate(-50%, -50%);
   will-change: transform;
@@ -28,14 +36,14 @@ body {
 .click {
   width: 50px;
   height: 50px;
-  border: 3px solid #0042e9;
+  border: 3px solid var(--color-primary);
   backdrop-filter: invert(1) brightness(1.5) contrast(1.5);
 }
 
 .hover {
   width: 50px;
   height: 50px;
-  border: 6px solid #0042e9;
+  border: 6px solid var(--color-primary);
   backdrop-filter: invert(1) brightness(1.5) contrast(1.5);
 }
 
@@ -43,8 +51,8 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #dadada;
-  color: #0042e9;
+  background: var(--color-tertiary);
+  color: var(--color-primary);
   font-size: 45px;
   z-index: 9999;
   top: 0;
@@ -57,7 +65,7 @@ body {
 }
 
 .preloader p {
-  color: #0e1111;
+  color: var(--color-secondary);
   padding: 0;
   margin: 0;
   font-size: 25px;
@@ -65,20 +73,20 @@ body {
 }
 
 .navbar {
-  background-color: #dadadabd;
-  backdrop-filter: blur(10px) saturate(180%);
-  color: #0e1111;
+  background-color: var(--color-tertiary-trans);
+  backdrop-filter: blur(15px) saturate(180%);
+  color: var(--color-secondary);
   padding: 10px;
   text-align: center;
   margin: 10px 10px 0 10px;
-  border: #0e1111 1px solid;
+  border: var(--color-secondary) 1px solid;
 
-  z-index: 998;
+  z-index: 17;
   position: fixed;
   top: 0;
   width: calc(100% - 40px);
 
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 0px 20px 0px var(--color-secondary-trans);
 }
 
 .navbar .container {
@@ -99,7 +107,7 @@ body {
   padding: 0;
   border: 0;
   background-color: transparent;
-  color: #0e1111;
+  color: var(--color-secondary);
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
@@ -109,7 +117,7 @@ body {
 .navbar .logo img {
   height: 60px;
   width: 60px;
-  filter: brightness(1.5);
+  z-index: 25;
 }
 
 .navbar ul {
@@ -123,7 +131,7 @@ body {
 }
 
 .navbar ul li a {
-  color: #0e1111;
+  color: var(--color-secondary);
   font-weight: 200;
   font-size: 1.25rem;
   text-decoration: underline #dadada00;
@@ -133,8 +141,8 @@ body {
 }
 
 .navbar ul li a:hover {
-  color: #0e1111;
-  text-decoration: underline #0e1111;
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-secondary);
   text-underline-position: under;
   text-underline-offset: 0px;
 }
@@ -146,10 +154,10 @@ body {
   opacity: 1;
   display: none;
   flex-direction: column;
-  background-color: #dadada;
+  background-color: var(--color-tertiary);
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 17;
 }
 
 .navbar .mobile .header {
@@ -164,8 +172,7 @@ body {
 }
 .navbar .mobile .header i {
   font-size: 2rem;
-  z-index: 999;
-  color: #0e1111;
+  color: var(--color-secondary);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -186,17 +193,17 @@ body {
 }
 
 .navbar .mobile ul li a {
-  text-decoration: underline 1px #0e1111;
+  text-decoration: underline 1px var(--color-secondary);
   text-underline-offset: 0px;
   font-size: 2rem;
-  color: #0e1111;
+  color: var(--color-secondary);
 }
 .navbar .mobile ul li a::before {
-  text-decoration: underline 1px #dadada;
+  text-decoration: underline 1px var(--color-tertiary);
   content: "# ";
   font-weight: bold;
   font-size: 2rem;
-  color: #0e1111;
+  color: var(--color-secondary);
   margin-right: 10px;
 }
 
@@ -212,12 +219,12 @@ body {
 }
 
 footer {
-  background-color: #dadada;
-  color: #0e1111;
+  background-color: var(--color-tertiary);
+  color: var(--color-secondary);
   text-align: center;
   margin: 0 10px 10px 10px;
-  border: #0e1111 1px solid;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+  border: var(--color-secondary) 1px solid;
+  box-shadow: 0px 0px 20px 0px var(--color-secondary-trans);
 }
 
 footer .footer-bottom p {
@@ -226,8 +233,8 @@ footer .footer-bottom p {
 
 footer .footer-bottom {
   padding: 10px;
-  background-color: #0e1111;
-  color: #dadada;
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
   text-align: center;
   font-weight: bold;
   font-size: 1rem;
@@ -270,8 +277,8 @@ footer .container .footer-col h3 {
 }
 
 footer .container .footer-col a {
-  color: #0e1111;
-  text-decoration: underline #0e1111;
+  color: var(--color-secondary);
+  text-decoration: underline var(--color-secondary);
   text-underline-position: under;
   display: inline-block;
   margin-bottom: 5px;
@@ -287,7 +294,7 @@ footer .container .footer-col .footer-nav li::before {
   content: "# ";
   font-weight: bold;
   font-size: 1rem;
-  color: #0e1111;
+  color: var(--color-secondary);
   margin-right: 5px;
 }
 

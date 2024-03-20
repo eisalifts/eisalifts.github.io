@@ -23,7 +23,10 @@ $(document).ready(function () {
         top: e.clientY,
       });
     })
-    .on("mousedown", function () {
+    .on("mousedown", function (event) {
+      if (event.which === 3) {
+        return;
+      }
       $(".cursor").addClass("click");
       downFor = new Date();
     })
