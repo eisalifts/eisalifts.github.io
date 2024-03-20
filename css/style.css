@@ -36,8 +36,8 @@ body {
 }
 
 .navbar {
-  background-color: #dadadaef;
-  backdrop-filter: blur(15px) saturate(180%);
+  background-color: #dadadabd;
+  backdrop-filter: blur(10px) saturate(180%);
   color: #0e1111;
   padding: 10px;
   text-align: center;
