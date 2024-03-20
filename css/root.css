@@ -10,6 +10,35 @@ body {
   color: #0e1111;
 }
 
+.cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 15;
+  border: 2px solid #dadada00;
+  backdrop-filter: invert(1);
+  transform: translate(-50%, -50%);
+  will-change: transform;
+  transition: border 0.3s ease 0s, backdrop-filter 0.3s ease 0s,
+    width 0.3s ease 0s, height 0.3s ease 0s;
+}
+
+.click {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #0042e9;
+  backdrop-filter: invert(1) brightness(1.5) contrast(1.5);
+}
+
+.hover {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #0042e9;
+  backdrop-filter: invert(1) brightness(1.5) contrast(1.5);
+}
+
 .preloader {
   position: fixed;
   width: 100%;
@@ -179,5 +208,94 @@ body {
   }
   .navbar ul {
     display: none;
+  }
+}
+
+footer {
+  background-color: #dadada;
+  color: #0e1111;
+  text-align: center;
+  margin: 0 10px 10px 10px;
+  border: #0e1111 1px solid;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.41);
+}
+
+footer .footer-bottom p {
+  margin: 0;
+}
+
+footer .footer-bottom {
+  padding: 10px;
+  background-color: #0e1111;
+  color: #dadada;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+}
+
+footer .container .footer-col-grp {
+  display: flex;
+  width: calc((100% / 3) * 2);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+footer .container .footer-col {
+  margin: 10px;
+  display: flex;
+  width: calc(100% / 2);
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 10px;
+  text-align: left;
+}
+
+footer .container .footer-col p,
+footer .container .footer-col h3 {
+  margin: 0;
+}
+
+footer .container .footer-col a {
+  color: #0e1111;
+  text-decoration: underline #0e1111;
+  text-underline-position: under;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+footer .container .footer-col .footer-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .container .footer-col .footer-nav li::before {
+  content: "# ";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #0e1111;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container .footer-col {
+    width: calc(100% - 20px);
   }
 }
