@@ -45,14 +45,14 @@
 }
 
 .mini-hero .carousel {
-  width: 50%;
+  /* width: 50%; */
   border-radius: 10px;
   flex: 1;
 }
 
 .mini-hero .contained {
   margin: 10px;
-  width: 50%;
+  /* width: 50%; */
   flex: 1;
   text-align: center;
   display: flex;
@@ -86,6 +86,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .mini-hero {
+    flex-direction: column-reverse;
+  }
   .hero {
     padding: 15px;
     text-align: left;
@@ -163,7 +166,7 @@
 .products .section-heading {
   font-size: 3.5rem;
   font-weight: 750;
-  position: relative;
+  /* position: relative; */
   z-index: 15;
   filter: invert(1);
   mix-blend-mode: difference;
@@ -172,7 +175,7 @@
 
 .products .contained {
   position: relative;
-  top: -3rem;
+  /* top: -3rem; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -224,17 +227,39 @@
   font-size: 1.25rem;
   margin: 15px;
   z-index: 11;
-  color: black;
-  filter: invert(1);
-  mix-blend-mode: difference;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  /* filter: invert(1);
+  mix-blend-mode: difference; */
 }
 
 .carousel-caption {
-  text-shadow: 0px 0px 10px black;
+  background-color: #000000d2;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.carousel-caption h5 {
+  font-weight: bold;
+}
+
+.carousel-caption * {
+  margin: 0;
 }
 
 .carousel-item img {
+  background-color: white;
   object-fit: cover;
   height: 70vh;
   border-radius: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+  width: 90px;
+  /* filter: invert(1);
+  mix-blend-mode: difference; */
+  font-size: 3rem;
+  /* color: white; */
 }

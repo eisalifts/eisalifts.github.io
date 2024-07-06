@@ -314,6 +314,9 @@ footer .contained .footer-col .footer-nav li::before {
 }
 
 @media screen and (max-width: 768px) {
+  footer .contained .footer-col.fcsd {
+    display: none;
+  }
   footer .contained {
     flex-direction: column;
   }
