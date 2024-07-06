@@ -1,0 +1,41 @@
+.mini-hero {
+  margin: 103px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  width: calc(100%-80px);
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0px 0px 20px 0px var(--color-secondary-trans);
+}
+
+.mini-hero .contained * {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.mini-hero .contained .heading .cord {
+  text-decoration: underline solid 1.5px;
+  text-underline-offset: 6px;
+  padding: 1px;
+}
+
+.mini-hero .contained .heading .cord::after {
+  content: ">";
+  padding-left: 10px;
+  text-decoration: underline solid 1.5px var(--color-primary);
+  text-underline-offset: 6px;
+  color: lightgrey;
+}
+
+.mini-hero .contained .heading .cord:last-of-type::after {
+  content: "";
+}
+
+/* -------------- */
+
+main {
+  padding: 50px;
+  font-size: 18px;
+  height: calc(100vh - 140px - 140px);
+}
