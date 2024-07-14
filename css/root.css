@@ -188,6 +188,8 @@ image {
   line-height: 2;
 }
 .navb .mobile .header i {
+  position: relative;
+  left: -40px;
   font-size: 2rem;
   color: var(--color-secondary);
   cursor: pointer;
@@ -203,8 +205,8 @@ image {
   text-align: left;
   gap: 20px;
   position: relative;
-  top: -40px;
-  margin: auto;
+  top: -80px;
+  margin: 0 20px 0 20px;
   align-items: flex-start;
   height: 100%;
 }
