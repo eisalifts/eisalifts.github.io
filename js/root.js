@@ -9,7 +9,7 @@ var loadingTimeout = setInterval(() => {
   i++;
 }, 500);
 
-document.addEventListener("DOMContentLoaded", () => {
+$(document).ready(function () {
   $(".navbar .container::after").on("click", function () {
     $(".mobile").show();
   });
