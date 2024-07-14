@@ -120,7 +120,7 @@
   .mini-hero {
     flex-direction: column-reverse;
     height: calc(100vh - 113px);
-    width: calc(100% - 20px);
+    width: 100%;
   }
   .carousel-item img {
     height: calc(((100vh - 113px) / 2) - 20px) !important;
