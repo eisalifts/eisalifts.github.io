@@ -18,7 +18,7 @@ $(document).ready(function () {
     clearInterval(loadingTimeout);
     $(".preloader").hide();
     // $(".cursor").hide();
-    onReady();
+    // onReady();
 
     var downFor;
 
