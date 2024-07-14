@@ -259,7 +259,7 @@
   background: linear-gradient(to bottom, transparent 50%, black 100%);
 }
 
-.products .product img {
+.products .product .product-img {
   height: 100%;
   object-fit: cover;
   left: 0;
