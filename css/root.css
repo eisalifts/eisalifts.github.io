@@ -4,10 +4,11 @@ html {
 
 :root {
   --color-primary: #0042e9;
+  --color-primary-trans: #0042e9bd;
   --color-secondary: #0e1111;
   --color-secondary-trans: #0e1111bd;
-  --color-tertiary: #dadada;
-  --color-tertiary-trans: #dadadabd;
+  --color-tertiary: #f2f0ef;
+  --color-tertiary-trans: #f2f0efbd;
 }
 
 body {
@@ -85,15 +86,16 @@ image {
   color: var(--color-secondary);
   padding: 10px;
   text-align: center;
-  margin: 10px 10px 0 10px;
-  border: var(--color-secondary) 1px solid;
+  /* margin: 10px 10px 0 10px; */
+  /* border: var(--color-secondary) 1px solid; */
 
   z-index: 67;
   position: fixed;
   top: 0;
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
+  width: calc(100% - 20px);
 
-  box-shadow: 0px 0px 20px 0px var(--color-secondary-trans);
+  /* box-shadow: 0px 0px 20px 0px var(--color-secondary-trans); */
   box-sizing: content-box;
 }
 
@@ -150,17 +152,17 @@ image {
   font-weight: 200;
   font-size: 1.25rem;
   text-decoration: underline #323232;
-  text-underline-position: under;
-  text-underline-offset: 5px;
-  transition: all 0.25s ease-out 0s;
+  text-underline-position: below;
+  text-underline-offset: 6px;
+  transition: all 0.15s ease-out 0s;
 }
 
 .navb ul li a:hover {
   color: var(--color-secondary);
   text-decoration: underline var(--color-secondary) 2px;
   text-shadow: 0 0 1px var(--color-secondary);
-  text-underline-position: under;
-  text-underline-offset: 0px;
+  text-underline-position: below;
+  text-underline-offset: 4px;
 }
 
 .navb .mobile {
